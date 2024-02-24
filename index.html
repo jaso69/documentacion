@@ -1,52 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="introjs.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documenytación Coex</title>
-  </head>
-  <body>
-    <main>
-      <div></div>
-      <div data-title="Dispositivos" data-intro="Selecciona el dispositivo a configurar"></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div data-title="Seleccionar fuente" data-intro="Selecciona la fuente de entrada de video"></div>
-      <div></div>
-      <div></div>
-      <div data-title="Canvas de la señal de entrada" data-intro="Muestra un previo de la señal de video de cada dispositivo, si el nombre del dispositivo esta en color azul, indica que es el dispositivo seleccionado"></div>
-      <div data-title="Opciones del canvas" data-intro="🔓 Bloqueamos la relacion de aspecto. 1:1 No escala la señal. 🪟 Escala la señal."></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div data-title="Tamaño del canvas" data-intro="En este apartado podemos seleccionar el tamaño del canvas a mostrar en pantalla"></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div data-title="Informacion de la señal" data-intro="En este apartado nos muestra la informacion de la señal de entrada de video seleccionada"></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div data-title="EDID" data-intro="Configuracion del EDID"></div>
-      <div></div>
-      <div></div>
-      <div id="mn" data-title="Previos" data-intro="Previos de cada señal de entrada" ></div>
-      
+    <title>Documentación software Contex</title>
+</head>
+<body>
+    <main class="flex flex-col">
+        <header class="flex flex-col">
+            <h1 class="text-center text-white text-7xl p-4">Documentación software Contex</h1>
+            <span class="text-center text-white text-4xl">Indice:</span>
+        </header>
+        <section>
+            <ul class="flex flex-col p-4 text-center text-white m-6">
+                <li class="mb-12 border-2 p-6 rounded-3xl">
+                    <a 
+                        href="source.html"
+                        id="source" 
+                        class="bg-[#09f] text-white p-4 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Source
+                    </a>
+                    <a href="layout.html"
+                        id="layout" 
+                        class="ml-4 bg-[#09f] text-white p-4 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Layout
+                    </a>
+                    <a 
+                        href="correction.html"
+                        id="correction" 
+                        class="ml-4 bg-[#09f] text-white p-4 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Correction
+                    </a>
+                    <a 
+                        href="processing.html"
+                        id="processing" 
+                        class="ml-4 bg-[#09f] text-white p-4 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Processing
+                    </a>
+                    <a 
+                        href="screen.html"
+                        id="screen" 
+                        class="ml-4 bg-[#09f] text-white p-4 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Screen Settings
+                    </a>
+                    <a 
+                        href="monitor.html"
+                        id="monitor" 
+                        class="ml-4 bg-[#09f] text-white p-4 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Monitor
+                    </a>
+                    <a 
+                        href="preset.html"
+                        id="preset" 
+                        class="ml-4 bg-[#09f] text-white p-4 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Preset
+                    </a>                
+                </li>
+            </ul>
+        </section>
+        <section class="flex items-center justify-center">
+            <img id="sourceImg" src="./img/p1.png" alt="">
+            <img id="layoutImg" src="./img/p2tumb.png" alt="">
+            <img id="correctionImg" src="./img/p4 tumb.png" alt="">
+            <img id="processingImg" src="./img/processingtumb.png" alt="">
+            <img id="screenImg" src="./img/screentumb.png" alt="">
+            <img id="monitorImg" src="./img/monitorstatustumb.png" alt="">
+            <img id="presetImg" src="./img/presettumb.png" alt="">
+        </section>
     </main>
-    <script src="intro.min.js"></script>
-    <script src="main.js" type="module"></script>
-  </body>
+    <script src="index.js"></script>
+</body>
 </html>

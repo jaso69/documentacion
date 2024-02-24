@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleMenu.css">
+    <link href="introjs.css" rel="stylesheet">
+    <title>Layout</title>
+</head>
+<body>
+    <main class="flex flex-col justify-center escala mx-auto">
+        <div class="flex flex-row">
+            <img src="/img/layout/1.png" alt="">
+            <img 
+                data-title="Layout" 
+                data-intro="Con esta opción configuramos la conexión de los puertos de la pantalla "   
+                data-step="1" 
+                src="/img/layout/2.png" alt=""
+            >
+            <img src="/img/layout/3.png" alt="">
+        </div>
+        <div class="flex flex-row">
+            <img src="/img/layout/4.png" alt="">
+            <img src="/img/layout/5.png" alt="">
+        </div>
+        <div class="flex flex-row">
+            <img src="/img/layout/6.png" alt="">
+            <img 
+                data-title="Canvas" 
+                data-intro="En el ejemplo se muestra como estan configurados los puertos.<br>Ejemplo:<br> El puerto 1 ocupa 7 cabinets de manera vertical, que se corresponde con la conexión realizada en el montaje<br>Tambien podemos ver que el lazo del puerto esta correcto al aparecer en verde los cabinets" 
+                data-step="3"  
+                src="/img/layout/7.png" 
+                alt=""
+                >
+            <img 
+                data-title="Cabinet" 
+                data-intro="Modelo y caracteristicas del cabinet usado en la pantalla Led" 
+                data-step="4"  
+                src="/img/layout/8.png" 
+                alt=""
+            >
+        </div>
+        <div class="flex flex-row">
+            <img src="/img/layout/9.png" alt="">
+            <img src="/img/layout/10.png" alt="">
+        </div>
+        <div class="flex flex-row">
+            <img src="/img/layout/11.png" alt="">
+            <img 
+                data-title="Puertos" 
+                data-intro="Selección del puerto a configurar" 
+                data-step="2" 
+                src="/img/layout/12.png" 
+                alt=""
+            >
+            <img 
+                data-title="Cabinets Settings" 
+                data-intro="Seleccionando un cabinet en el canvas, podemos hacer un blackout, congelar, indicador del cabinet seleccionado" 
+                data-step="5"  
+                src="/img/layout/13.png" 
+                alt=""
+            >
+        </div>
+    </main>
+    <dialog id="dialogo" class="flex flex-col text-center bg-slate-700 text-white p-6 rounded-xl">
+        <h1 class="text-xl font-bold mb-4">Fin del recorrido!!</h1>
+        <span>Desea iniciar de nuevo el recorrido?</span>
+        <div class="flex flex-row justify-between mt-4">
+            <button id="yes" class="bg-green-700 rounded-full p-4">Si</button>
+            <button id="no" class="bg-red-700 rounded-full p-4">No</button>
+        </div>
+    </dialog>
+    <script src="intro.min.js"></script>
+    <script src="main.js" type="module"></script>
+</body>
