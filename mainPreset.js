@@ -1,5 +1,3 @@
-import './intro.min.js'
-import './styleMenu.css'
 
 const modal = document.querySelector('#dialogo')
 const buttonYes = document.querySelector('#yes')

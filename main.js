@@ -1,5 +1,3 @@
-import './intro.min.js'
-import './styleMenu.css'
 
 const modal = document.querySelector('#dialogo')
 const buttonYes = document.querySelector('#yes')
@@ -20,15 +18,12 @@ buttonYes.addEventListener('click', () => { window.location.reload()})
 
 buttonNo.addEventListener('click', () => {window.location.replace('http://localhost:5173/index.html')})
 
-modal.classList.add('cerrar')
-
+document.querySelector('#dialogo').style.display = 'none'
 
 const end = () => {
-  modal.classList.remove('cerrar')
-  modal.classList.add('abrir')
+  document.querySelector('#dialogo').style.display = 'block'
   modal.showModal()
 }
-
 
 start()
 
