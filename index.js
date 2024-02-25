@@ -6,6 +6,7 @@ const processingButton = document.querySelector('#processing')
 const screenButton = document.querySelector('#screen')
 const monitorButton = document.querySelector('#monitor')
 const presetButton = document.querySelector('#preset')
+const esquemasButton = document.querySelector('#esquemas')
 
 const layoutImg = document.querySelector('#layoutImg')
 const sourceImg = document.querySelector('#sourceImg')
@@ -14,6 +15,9 @@ const processingImg = document.querySelector('#processingImg')
 const screenImg = document.querySelector('#screenImg')
 const monitorImg = document.querySelector('#monitorImg')
 const presetImg = document.querySelector('#presetImg')
+const esquemasImg = document.querySelector('#esquemasImg')
+
+const descSoft = document.querySelector('#descSoft')
 
 sourceImg.classList.add('cerrar')
 layoutImg.classList.add('cerrar')
@@ -22,6 +26,21 @@ processingImg.classList.add('cerrar')
 screenImg.classList.add('cerrar')
 monitorImg.classList.add('cerrar')
 presetImg.classList.add('cerrar')
+esquemasImg.classList.add('cerrar')
+
+esquemasButton.addEventListener('mouseover', () => { 
+    esquemasImg.classList.remove('cerrar')
+    esquemasImg.classList.add('abrir')
+    descSoft.classList.remove('abrir')
+    descSoft.classList.add('cerrar') 
+})
+
+esquemasButton.addEventListener('mouseout', () => { 
+    esquemasImg.classList.remove('abrir')
+    esquemasImg.classList.add('cerrar')
+    descSoft.classList.add('abrir')
+    descSoft.classList.remove('cerrar')  
+})
 
 presetButton.addEventListener('mouseover', () => { 
     presetImg.classList.remove('cerrar')
