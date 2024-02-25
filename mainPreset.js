@@ -18,12 +18,11 @@ buttonYes.addEventListener('click', () => { window.location.replace('./preset1.h
 
 buttonNo.addEventListener('click', () => {window.location.replace('./index.html')})
 
-modal.classList.add('cerrar')
+document.querySelector('#dialogo').style.display = 'none'
 
 
 const end = () => {
-  modal.classList.remove('cerrar')
-  modal.classList.add('abrir')
+  document.querySelector('#dialogo').style.display = 'block'
   modal.showModal()
 }
 
