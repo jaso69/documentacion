@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>RPG Documentación software Contex</title>
+</head>
+<body>
+    <nav class="flex flex-col">
+        <section>
+            <ul class="flex flex-col p-4 text-center text-white m-4">
+                <li>
+                </li>
+                <li class="flex mb-12 border-2 p-6 rounded-3xl align-middle justify-between">
+                    <img src="./img/logo-rpg.png" alt="" class ="mr-6">
+                    <a 
+                        href="source.html"
+                        id="source" 
+                        class="bg-[#09f] text-white p-6 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Source
+                    </a>
+                    <a href="layout.html"
+                        id="layout" 
+                        class="bg-[#09f] text-white p-6 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Layout
+                    </a>
+                    <a 
+                        href="correction.html"
+                        id="correction" 
+                        class="bg-[#09f] text-white p-6 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Correction
+                    </a>
+                    <a 
+                        href="processing.html"
+                        id="processing" 
+                        class="bg-[#09f] text-white p-6 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Processing
+                    </a>
+                    <a 
+                        href="screen.html"
+                        id="screen" 
+                        class="bg-[#09f] text-white p-6 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Screen Settings
+                    </a>
+                    <a 
+                        href="monitor.html"
+                        id="monitor" 
+                        class="bg-[#09f] text-white p-6 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Monitor
+                    </a>
+                    <a 
+                        href="preset.html"
+                        id="preset" 
+                        class="bg-[#09f] text-white p-6 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Preset
+                    </a>
+                    <a 
+                        href="esquemas.html"
+                        id="esquemas" 
+                        class="bg-green-700 text-white p-6 font-bold text-xl rounded-full hover:bg-white hover:text-[#09f]"
+                    >
+                        Esquemas Pantalla Led
+                    </a>                
+                </li>
+            </ul>
+        </section>
+    </nav>
+    <header class="flex flex-col justify-center">
+        <h1 class="text-white text-5xl text-center font-bold">Documentación Teléfonica Auditorio</h1>
+        <h1 id="descSoft" class="text-center text-white text-4xl p-4 font-bold">Software Contex</h1>
+    </header>
+    <main class="flex flex-col">
+        
+        <section class="flex items-center justify-center">
+            <img id="sourceImg" src="./img/p1.png" alt="">
+            <img id="layoutImg" src="./img/p2tumb.png" alt="">
+            <img id="correctionImg" src="./img/p4 tumb.png" alt="">
+            <img id="processingImg" src="./img/processingtumb.png" alt="">
+            <img id="screenImg" src="./img/screentumb.png" alt="">
+            <img id="monitorImg" src="./img/monitorstatustumb.png" alt="">
+            <img id="presetImg" src="./img/presettumb.png" alt="">
+            <img id="esquemasImg" src="./img/esquemas/esquemaLedTumb.png" alt="" class="mt-6">
+        </section>
+    </main>
+    <script src="./index.js" type="module"></script>
+    <script>
+        let navegador = navigator.userAgent;
+        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+            alert("Este documento solo esta disponible para versión de escritorio. 1920x1080px")
+        } 
+    </script>
+</body>
+</html>
