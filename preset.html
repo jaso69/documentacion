@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleMenu.css">
+    <link href="introjs.css" rel="stylesheet">
+    <title>Preset</title>
+</head>
+<body>
+    <main class="flex flex-col justify-center escala mx-auto">
+        <section id="preset">
+            <div class="flex flex-row">
+                <img src="/img/preset/1.png" alt="">
+                <img 
+                src="/img/preset/2.png" alt=""
+                data-title="Preset"
+                data-intro="Accede rápidamente a configuraciones predefinidas por el usuario">
+                <img src="/img/preset/3.png" alt="">
+            </div>
+            <div class="flex flex-row">
+                <img src="/img/preset/4.png" alt="">
+                <img 
+                src="/img/preset/5.png" alt=""
+                data-title="Añadir"
+                data-intro="Pulsa sobre el botón para añadir un preset"
+                >
+                <img src="/img/preset/6.png" alt="">
+                <img 
+                src="/img/preset/7.png" alt=""
+                data-title="Preset"
+                data-intro="Selecciona los parámetros que deseas aplicar al preset"
+                >
+            </div>
+            <div class="flex flex-row">
+                <img src="/img/preset/8.png" alt="">
+                <img src="/img/preset/9.png" alt="">
+            </div>
+        </section>
+    </main>
+    <dialog id="dialogo" class="flex flex-col text-center bg-slate-700 text-white p-6 rounded-xl">
+        <h1 class="text-xl font-bold mb-4">Continuar el recorrido >>></h1>
+        <div class="flex flex-row justify-between mt-4">
+            <button id="yes" class="bg-green-700 rounded-full p-4">Si</button>
+            <button id="no" class="bg-red-700 rounded-full p-4">No</button>
+        </div>
+    </dialog>
+    <script src="intro.min.js"></script>
+    <script src="mainPreset.js" type="module"></script>
+</body>
