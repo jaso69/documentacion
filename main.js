@@ -16,7 +16,7 @@ const start = () => {
 
 buttonYes.addEventListener('click', () => { window.location.reload()})
 
-buttonNo.addEventListener('click', () => {window.location.replace('http://localhost:5173/index.html')})
+buttonNo.addEventListener('click', () => {window.location.replace('./index.html')})
 
 document.querySelector('#dialogo').style.display = 'none'
 

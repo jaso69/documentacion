@@ -14,9 +14,9 @@ const start = () => {
   }).start()
 } 
 
-buttonYes.addEventListener('click', () => { window.location.replace('http://localhost:5173/preset2.html')})
+buttonYes.addEventListener('click', () => { window.location.replace('./preset2.html')})
 
-buttonNo.addEventListener('click', () => {window.location.replace('http://localhost:5173/index.html')})
+buttonNo.addEventListener('click', () => {window.location.replace('./index.html')})
 
 modal.classList.add('cerrar')
 
