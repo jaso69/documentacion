@@ -1,5 +1,6 @@
-const login = localStorage.getItem('#login')
-if (login !== 'ok') window.location.replace('./login.html')
+const login = localStorage.getItem('login')
+console.log(login)
+if (!login) window.location.replace('./login.html')
 
 const logout = document.querySelector('#logout')
 logout.addEventListener('click', () => {

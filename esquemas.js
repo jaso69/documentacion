@@ -1,10 +1,11 @@
-const login = localStorage.getItem('#login')
-if (login !== 'ok') window.location.replace('./login.html')
+const login = localStorage.getItem('login')
+if (!login) window.location.replace('./login.html')
 const logout = document.querySelector('#logout')
 logout.addEventListener('click', () => {
     window.localStorage.clear()
     window.location.replace('./login.html')
 })
+
 const sourceButton = document.querySelector('#source')
 const pantallaButton = document.querySelector('#pantalla')
 const electricoButton = document.querySelector('#electrico')
