@@ -19,7 +19,7 @@ const start = () => {
 
 buttonYes.addEventListener('click', () => { window.location.reload()})
 
-buttonNo.addEventListener('click', () => {window.location.replace('./index.html')})
+buttonNo.addEventListener('click', () => {window.location.replace('https://documentacion-telefonica.vercel.app/tuto')})
 
 document.querySelector('#dialogo').style.display = 'none'
 

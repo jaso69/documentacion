@@ -14,24 +14,43 @@
 </head>
 <body>
     <main class="flex flex-col justify-center escala mx-auto">
-        <section>
-
             <div class="flex flex-row">
                 <img 
                     data-title="Menu principal" 
-                    data-intro="<strong>Menu de la aplicación:</strong><br>Project, Edit, View, Tools, Settings, Help <br><strong>Blackout</strong> de la pantalla led <br><strong>Frezze</strong> congelamos señal de video" 
+                    data-intro="<strong class='text-green-500'>Project:</strong> Export , Import proyectos.<br>
+                    <strong class='text-green-500'>Edit:</strong> Undo, Redo, Swap, Group, Ungroup, Add to Group, Delete, Align<br>
+                    <strong class='text-green-500'>View:</strong> Zoom, Grid, Display, Lock Correction.<br>
+                    <strong class='text-green-500'>Tools:</strong> Maintain, Control, Backup, Offline.<br>
+                    <strong class='text-green-500'>Settings:</strong> General, Cabinet Library.<br>
+                    <strong class='text-green-500'>Help:</strong> User Manual, About, Shortcuts.<br>
+                    <strong class='text-green-500'>Blackout</strong> de la pantalla led.<br>
+                    <strong class='text-green-500'>Frezze</strong> congelamos imagen" 
+                    data-step="2"
                     src="/img/recortes/1.png" alt=""
                 >
-                <img data-title="Opciones de configuración" data-intro="Source -> opción actual<br>Layout<br>Correction<br>Processing<br>Screen Settings<br>Monitor<br>Preset" src="/img/recortes/2.png" alt="">
+                <img data-title="Source" 
+                data-intro="<strong class='text-green-500'>Source: </strong>Seleccione la fuente de entrada para la pantalla LED. Esto determina el origen del contenido que se mostrará en la pantalla." 
+                data-step="1"
+                src="/img/recortes/2.png" alt="">
             </div>
             <div class="flex flex-row">
-                <img data-title="Dispositivos" data-intro="Dispositivos detectados<br>Selecciona el dispositivo a configurar" src="/img/recortes/3.png" alt="">
-                <img data-title="Opciones de los canvas" data-intro="Zoom<br>Escalado<br>Tipos de vista" src="/img/recortes/4.png" alt="">
+                <img 
+                data-title="Dispositivos" 
+                data-intro="<strong class='text-green-500'>Dispositivos conectados: </strong><br>Selecciona el dispositivo a configurar" 
+                data-step="3"
+                src="/img/recortes/3.png" alt="">
+                <img data-title="Opciones de los canvas" 
+                data-intro="Zoom<br>Escalado<br>Tipos de vista" 
+                data-step="4"
+                src="/img/recortes/4.png" alt="">
                 <img data-title="Seleccionar fuente" data-intro="Selección de la fuente de entrada de video" src="/img/recortes/5.png" alt="">
             </div>
             <div class="flex flex-row">
                 <img src="/img/recortes/6.png" alt="">
-                <img data-title="Canvas de la señal de entrada" data-intro="Muestra un previo de la señal de video de cada dispositivo, si el nombre del dispositivo esta en color azul, indica que el dispositivo esta seleccionado<br>Opciones:<br>🔓 Bloqueamos la relacion de aspecto.<br> 1:1 No escala la señal.<br> 🪟 Escala la señal" src="/img/recortes/7.png" alt="">
+                <img data-title="Canvas" 
+                data-intro="Muestra un previo de la señal de video de cada dispositivo, si el nombre del dispositivo esta en color azul, indica que el dispositivo esta seleccionado<br>Opciones:<br>🔓 Bloqueamos la relacion de aspecto.<br> 1:1 No escala la señal.<br> 🪟 Escala la señal" 
+                data-step="5"
+                src="/img/recortes/7.png" alt="">
                 <img data-title="Tamaño del canvas" data-intro="En este apartado podemos seleccionar el tamaño del canvas a mostrar en pantalla" src="/img/recortes/8.png" alt="">
             </div>
             <div class="flex flex-row">
@@ -49,10 +68,12 @@
             </div>
             <div class="flex flex-row">
                 <img src="/img/recortes/14.png" alt="">
-                <img  data-title="Información de la fuente" data-intro="Información de la señal de entrada de video"  src="/img/recortes/15.png" alt="">
+                <img  data-title="Selección de entrada" 
+                data-intro="Seleccione una fuente de entrada de la lista para la pantalla LED" 
+                src="/img/recortes/15.png" alt="">
                 <img src="/img/recortes/16.png" alt="">
             </div>
-        </section>
+
     </main> 
     <dialog id="dialogo" class="flex flex-col text-center bg-slate-700 text-white p-6 rounded-xl">
         <h1 class="text-xl font-bold mb-4">Fin del recorrido!!</h1>
