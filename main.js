@@ -1,6 +1,6 @@
 
-const login = localStorage.getItem('login')
-if (login !== 'ok') window.location.replace('./login.html')
+//const login = localStorage.getItem('login')
+//if (login !== 'ok') window.location.replace('./login.html')
 
 const modal = document.querySelector('#dialogo')
 const buttonYes = document.querySelector('#yes')
